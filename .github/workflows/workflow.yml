@@ -1,0 +1,17 @@
+name: Openinnovations with Laravel - under construction Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      
+    - name: Print Under construction
+      run: echo "Under construction"
