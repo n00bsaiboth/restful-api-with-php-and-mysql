@@ -1,0 +1,15 @@
+
+version: 2.1
+orbs:
+  composer: stockfiller/composer@2.0.4
+jobs:
+  run-the-tests: 
+    docker:
+      - image: cimg/php:8.3
+    steps:
+      - checkout
+      - composer/install
+workflows:
+  pr-or-deploy:
+    jobs:
+      - run-the-tests
