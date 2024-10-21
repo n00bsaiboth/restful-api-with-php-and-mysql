@@ -1,4 +1,4 @@
-name: Openinnovations with Laravel - under construction Workflow
+name: RESTful API with PHP and MySQL Workflow
 
 on:
   pull_request:
